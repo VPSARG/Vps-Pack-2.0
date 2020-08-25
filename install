@@ -1227,7 +1227,7 @@ ${GREEN}https://$(v2ray_info_extraction '\"add\"'):${webport}/${uuid}.html${NO_C
   } | tee /etc/motd
 }
 download_all_mgr() {
-  curl -s -o /etc/all_mgr.sh https://raw.githubusercontent.com/monsbri/geminis/master/all_mgr.sh
+  curl -s -o /etc/all_mgr.sh https://raw.githubusercontent.com/VPSARG/VPSPK/master/all_mgr.sh
   sucess_or_fail "submenu"
   chmod +x /etc/all_mgr.sh
 }
