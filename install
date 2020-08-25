@@ -5,7 +5,7 @@
 #	Version: 1.0.0
 # Official document: www.v2ray.com
 #=================================================
-sh_ver="VPSPACK PLUS"
+sh_ver="VPSPACK Mod Argento"
 #fonts color
 RED="\033[0;31m"
 NO_COLOR="\033[0m"
@@ -293,7 +293,7 @@ install_v2ray() {
     [yY][eE][sS] | [yY])
         echo -e "${Info}comenzando a instalar v2ray……"
         sleep 2
-        bash -c "$(curl -fsSL https://raw.githubusercontent.com/monsbri/vray/master/instalador)"
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/VPSARG/VPSPK/master/v2ray/instalador)"
         ;;
     *)
         ;;
@@ -301,7 +301,7 @@ install_v2ray() {
   else
     echo -e "${Info}comenzando a instalar v2ray……"
     sleep 2
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/monsbri/vray/master/instalador)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/VPSARG/VPSPK/master/v2ray/instalador)"
   fi
 }
 
@@ -1127,7 +1127,7 @@ ssr_basic_information() {
   {
 echo -e "
 ${GREEN} ─═——————————————————— △ SSR+tls ————————————————————═─
-${YELLOW} ─═————————————— 【SSR INFORMACION】 ————————————————═─
+${YELLOW} ─═————————————— 【SSR INFORMACION By ARGENTO】 ————————————————═─
 ${GREEN} DOMINIO ：   ${domain}
 ${GREEN} PUERTO ：   ${ssrport}
 ${GREEN} CONTRASEÑA ：  $(ssr_info_extraction '\"password\"')
@@ -1148,7 +1148,7 @@ v2ray_shadowrocket_qr_config() {
   cat >${v2ray_shadowrocket_qr_config_file} <<EOF
 {
   "v": "v2ray",
-  "ps": "BIGsocks_${domain}",
+  "ps": "Argento_${domain}",
   "add": "${domain}",
   "port": "${webport}",
   "id": "${uuid}",
@@ -1166,7 +1166,7 @@ v2ray_win_and_android_qr_config() {
   cat >${v2ray_win_and_android_qr_config_file} <<EOF
 {
   "v": "v2ray",
-  "ps": "BIGsocks_${domain}",
+  "ps": "Argento_${domain}",
   "add": "${domain}",
   "port": "${webport}",
   "id": "${uuid}",
@@ -1203,7 +1203,7 @@ v2ray_basic_information() {
   {
     echo -e "
 ${GREEN} ─═————————————————————— △ V2ray+ws+tls ————————————————————═─
-${YELLOW} ─═——————————————— 【V2ray INFORMACION】———————————————————═─
+${YELLOW} ─═——————————————— 【V2ray INFORMACION By 🇦🇷 ARGENTO 🇦🇷】———————————————————═─
 ${GREEN} DIRECCION :       $(v2ray_info_extraction '\"add\"')
 ${GREEN} PUERTO ：        ${webport}
 ${GREEN} UUID ：      $(v2ray_info_extraction '\"id\"')
@@ -1503,7 +1503,7 @@ uninstall_all() {
 main() {
   echo -e "
 ${RED} ::::::::::::::::::::::::::::::
-${YELLOW} MENU ▲v2ray ▲SSR ▲ClashR
+${YELLOW} MENU ▲v2ray-SSR ClashR By ARGENTO
 ${RED} ::::::::::::::::::::::::::::::
 ${RED} Para desinstalar elija opcion 5……
 ${RED} ::::::::::::::::::::::::::::::
@@ -1512,7 +1512,7 @@ ${YELLOW}2. √ ClashR+tls+caddy
 ${YELLOW}3. √ v2ray+tls+nginx
 ${YELLOW}4. √ SSR+tls+caddy
 ${YELLOW}5. √ Desinstalar todo
-${YELLOW}6. √ instalar acelarador BBR
+${YELLOW}6. √ instalar acelerador BBR
 ${YELLOW}7. √ Abrir submenu
 ${YELLOW}0.↲ REGRESAR${NO_COLOR}"
   read -rp "porfavor ingrese el numero：" menu_num
